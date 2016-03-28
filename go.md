@@ -1,3 +1,9 @@
+## Convert error to string
+
+```go
+err.Error()
+```
+
 ## Reading database query result
 
 ```go
