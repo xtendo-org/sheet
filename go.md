@@ -30,3 +30,22 @@ if err != nil {
 ```
 
 (From [Retrieving Result Sets](http://go-database-sql.org/retrieving.html))
+
+## Lowercase field names for JSON marshaling
+
+```go
+type MyStruct struct {
+    MyField string `json:"my_field"`
+}
+```
+
+## Multiple tags for a struct field
+
+```go
+type Page struct {
+    PageId string                 `bson:"pageId" json:"pageId"`
+    Meta   map[string]interface{} `bson:"meta" json:"pageId"`
+}
+```
+
+(From [How to define multiple name tags in a struct](https://stackoverflow.com/a/18635910))
