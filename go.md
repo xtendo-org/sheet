@@ -35,7 +35,7 @@ if err != nil {
 
 ```go
 type MyStruct struct {
-    MyField string `json:"my_field"`
+	MyField string `json:"my_field"`
 }
 ```
 
@@ -43,8 +43,8 @@ type MyStruct struct {
 
 ```go
 type Page struct {
-    PageId string                 `bson:"pageId" json:"pageId"`
-    Meta   map[string]interface{} `bson:"meta" json:"pageId"`
+	PageId string				  `bson:"pageId" json:"pageId"`
+	Meta   map[string]interface{} `bson:"meta" json:"pageId"`
 }
 ```
 
