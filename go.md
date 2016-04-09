@@ -1,3 +1,20 @@
+## JSON
+
+```go
+import (
+	"encoding/json"
+)
+
+// encode
+byteString, err := json.Marshal(myStruct)
+
+// decode string to struct
+var st MyStruct = MyStruct{}
+err := json.Unmarshal([]byte(myString), &st)
+```
+
+Note that the missing fields in `myString` would not cause any error. They just remain the default value; `""` for strings, `0` for ints, and so on. Stupid Go.
+
 ## Convert error to string
 
 ```go
