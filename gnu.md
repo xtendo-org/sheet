@@ -2,12 +2,12 @@
 
 ([TuxOnIce] on Arch Wiki)
 
-#. Install linux-ice and tuxonice-userui from AUR.
-#. Edit `/etc/hibernate/tuxonice.conf`:
+1. Install linux-ice and tuxonice-userui from AUR.
+1. Edit `/etc/hibernate/tuxonice.conf`:
     - `ProcSetting userui_program /usr/bin/tuxoniceui`
-#. Edit `/etc/mkinitcpio.conf`:
+1. Edit `/etc/mkinitcpio.conf`:
     - `userui` before `resume` hook
-#. `sudo mkinitcpio -p linux-ice`
-#. `sudo grub-mkconfig -o /boot/grub/grub.cfg`
+1. `sudo mkinitcpio -p linux-ice`
+1. `sudo grub-mkconfig -o /boot/grub/grub.cfg`
 
 [TuxOnIce]: https://wiki.archlinux.org/index.php/TuxOnIce
