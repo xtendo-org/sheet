@@ -1,0 +1,3 @@
+- History of a file with diffs: `git log -p filename`
+- [Undo `git commit --amend`](https://stackoverflow.com/q/1459150): `git reset --soft HEAD@{1}`
+- [Undo `git add`](https://stackoverflow.com/q/348170): `git reset filename`
