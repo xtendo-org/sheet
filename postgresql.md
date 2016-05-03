@@ -4,9 +4,9 @@
 createuser -d -s -r
 ```
 
-- '-d': user can create database
-- '-s': user is superuser
-- '-r': user can create roles
+- `-d`: user can create database
+- `-s`: user is superuser
+- `-r`: user can create roles
 
 ```sql
 ALTER TABLE "article" ADD COLUMN "password" character varying(80) NULL;
