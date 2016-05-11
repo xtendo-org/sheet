@@ -23,8 +23,8 @@ Seriously, do me a favor and _use pyenv_.
 ## Install
 
 ```sh
-$ git clone --depth=1 https://github.com/yyuu/pyenv.git ~/.pyenv
-$ git clone --depth=1 https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+git clone --depth=1 https://github.com/yyuu/pyenv.git ~/.pyenv
+git clone --depth=1 https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 ```
 
 Configure your shell:
