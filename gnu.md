@@ -5,3 +5,9 @@ Get the maximum value without sorting:
 ```bash
 awk '$0>x{x=$0};END{print x}'
 ```
+
+## Delete matching lines
+
+```bash
+sed -i '/pattern/d' file
+```
