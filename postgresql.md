@@ -50,3 +50,23 @@ ALTER ROLE psusername WITH PASSWORD 'password';
 ```sql
 INSERT INTO tablename (column1, column2) VALUES ('Smith', 'John') RETURNING id;
 ```
+
+## `ALTER COLUMN`
+
+Remove the `NOT NULL` constraint:
+
+```sql
+ALTER TABLE person ALTER COLUMN phone DROP NOT NULL;
+```
+
+Change column name:
+
+```sql
+ALTER TABLE <tablename> RENAME <oldcolumn> TO <newcolumn>;
+```
+
+Change column type:
+
+```sql
+ALTER TABLE <tablename> ALTER COLUMN <columnname> TYPE <newtype>;
+```
